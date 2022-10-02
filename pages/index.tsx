@@ -7,6 +7,10 @@ import logo from "../public/logo.svg";
 import { FiDownload, FiActivity, FiArrowUp, FiRadio } from "react-icons/fi";
 
 const Home: NextPage = () => {
+  const todayData = {
+    
+  }
+
   return (
     <main className={styles.main}>
       <div>
@@ -42,51 +46,43 @@ const Home: NextPage = () => {
         <div className={styles.cards}>
           <div>
             <span>Magnetude</span>
-            <h1>5%</h1>
+            <h1>5 <span>keV</span></h1>
           </div>
           <div>
             <span>Wind speed</span>
-            <h1>200 km</h1>
-          </div>
-          <div>
-            <span>Magnetude</span>
-            <h1>5%</h1>
-          </div>
-          <div>
-            <span>Wind speed</span>
-            <h1>200 km</h1>
+            <h1>200 <span>km / s<sup>-1</sup></span></h1>
           </div>
         </div>
         <div className={styles.events}>
           <header>
             <FiRadio size={22} />
-            <h2>Day last events</h2>
+            <h2>Next events</h2>
           </header>
           <div>
             {[
               {
                 title: "Solar elavation event",
-                time: "10:23 PM",
+                time: "10:33 PM",
                 magnetude: 1350,
               },
               {
                 title: "Solar elavation event",
-                time: "10:23 PM",
+                time: "11:23 PM",
                 magnetude: 1350,
               },
               {
                 title: "Solar elavation event",
-                time: "10:23 PM",
+                time: "11:39 PM",
                 magnetude: 1350,
               },
               {
                 title: "Solar elavation event",
-                time: "10:23 PM",
+                time: "11:45 PM",
                 magnetude: 1350,
               },
               {
                 title: "Solar elavation event",
-                time: "10:23 PM",
+                time: "12:01 PM",
                 magnetude: 1350,
               },
             ].map((e) => (

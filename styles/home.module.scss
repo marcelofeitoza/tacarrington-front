@@ -4,15 +4,18 @@ $medium: 800px;
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 @keyframes smthAppearTop {
   from {
     opacity: 0;
     top: 50%;
   }
+
   to {
     opacity: 1;
     top: 0;
@@ -28,7 +31,8 @@ $medium: 800px;
   justify-content: center;
   flex-direction: row;
   padding: 20px;
-  > div {
+
+  >div {
     justify-content: space-around;
     display: flex;
     flex-direction: column;
@@ -36,15 +40,18 @@ $medium: 800px;
     height: 100%;
 
     border-radius: 15px;
+
     header {
       display: flex;
       align-items: center;
+
       h1 {
         margin-left: 15px;
         color: rgba(255, 255, 255, 0.5);
       }
     }
   }
+
   footer {
     font-weight: 500;
     font-size: 15px;
@@ -52,8 +59,9 @@ $medium: 800px;
 
     color: rgba(255, 255, 255, 0.5);
   }
-  > div:nth-child(2) {
-    > header {
+
+  >div:nth-child(2) {
+    >header {
       display: flex;
       justify-content: flex-end;
       margin-bottom: 10px;
@@ -65,6 +73,7 @@ $medium: 800px;
         width: 40px;
 
         transition: 200ms;
+
         &:active {
           transform: scale(0.9);
         }
@@ -79,31 +88,36 @@ $medium: 800px;
   align-items: center;
   justify-content: center;
 
-  > span {
+  >span {
     display: flex;
     align-self: flex-start;
     color: #00ff47;
   }
+
   h2 {
     font-size: 40px;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 10px;
   }
+
   h5 {
     margin-right: 20px;
   }
-  > div {
+
+  >div {
     justify-content: center;
     display: flex;
     flex-direction: column;
   }
 }
+
 .cards {
-  height: 250px;
+  height: 150px;
   margin-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 15px;
   column-gap: 15px;
+
   div {
     padding: 15px;
     display: flex;
@@ -112,7 +126,12 @@ $medium: 800px;
     background: rgba(33, 33, 33, 1);
     border-radius: 10px;
   }
+  
+  h1 > span {
+    font-size: 18px;
+  }
 }
+
 .events {
   background-color: rgba(33, 33, 33, 0.6);
   // height: 100%;
@@ -126,12 +145,14 @@ $medium: 800px;
       margin-left: 5px;
     }
   }
-  > div div {
+
+  >div div {
     color: rgba(255, 255, 255, 0.7);
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
-    > div {
+
+    >div {
       display: flex;
       flex-direction: column;
     }
@@ -140,13 +161,14 @@ $medium: 800px;
 
 @media only screen and (max-width: $medium) {
   .main {
-    > header {
+    >header {
       justify-content: center;
     }
 
     flex-direction: column;
     height: 100%;
   }
+
   .cards {
     height: 200px;
   }
