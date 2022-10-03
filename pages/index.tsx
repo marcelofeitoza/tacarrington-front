@@ -8,8 +8,58 @@ import { FiDownload, FiActivity, FiArrowUp, FiRadio } from "react-icons/fi";
 
 const Home: NextPage = () => {
   const todayData = {
-    
-  }
+    title: "Solar storm event",
+    time: "00:00:00.078 - 2022/01/01",
+    magnitude: 8.32856,
+  };
+
+  const weekData = [
+    {
+      title: "Solar storm event",
+      time: "2022/01/01 00:00:00.170",
+      magnitude: 8.314696,
+    },
+    {
+      title: "Solar storm event",
+      time: "2022/01/01 00:00:00.262",
+      magnitude: 8.315007,
+    },
+    {
+      title: "Solar storm event",
+      time: "2022/01/01 00:00:00.354",
+      magnitude: 8.316628,
+    },
+    {
+      title: "Solar storm event",
+      time: "2022/01/01 00:00:00.446",
+      magnitude: 8.352105,
+    },
+    {
+      title: "Solar storm event",
+      time: "2022/01/01 00:00:00.538",
+      magnitude: 8.3481,
+    },
+    {
+      title: "Solar storm event",
+      time: "2022/01/01 00:00:00.630",
+      magnitude: 8.373863,
+    },
+    {
+      title: "Solar storm event",
+      time: "2022/01/01 00:00:00.722",
+      magnitude: 8.408341,
+    },
+    {
+      title: "Solar storm event",
+      time: "2022/01/01 00:00:00.814",
+      magnitude: 8.427264,
+    },
+    {
+      title: "Solar storm event",
+      time: "2022/01/01 00:00:00.906",
+      magnitude: 8.434626,
+    },
+  ];
 
   return (
     <main className={styles.main}>
@@ -20,19 +70,19 @@ const Home: NextPage = () => {
         </header>
         <div className={styles.data}>
           <FiActivity size={30} />
-          <h2>1.350</h2>
+          <h2>{todayData.magnitude}</h2>
 
           <span>
-            <FiArrowUp color="#00FF47"/>
+            <FiArrowUp color="#00FF47" />
             <h5>1%</h5>
           </span>
           <div>
-            <span>12/05/2023</span>
-            <span>5-10 PM</span>
+            <span>01/01/2022</span>
+            <span>00 AM</span>
           </div>
         </div>
         <Image src={wave} className={styles.image} alt="solar waves" />
-        
+
         <footer>
           <span>Atualizado há 15 minutos</span>
         </footer>
@@ -45,12 +95,16 @@ const Home: NextPage = () => {
         </header>
         <div className={styles.cards}>
           <div>
-            <span>Magnetude</span>
-            <h1>5 <span>keV</span></h1>
+            <span>Magnitude</span>
+            <h1>
+              {todayData.magnitude} <span>keV</span>
+            </h1>
           </div>
           <div>
-            <span>Wind speed</span>
-            <h1>200 <span>km / s<sup>-1</sup></span></h1>
+            <span>Time</span>
+            <h1>
+              {todayData.time}
+            </h1>
           </div>
         </div>
         <div className={styles.events}>
@@ -59,39 +113,13 @@ const Home: NextPage = () => {
             <h2>Next events</h2>
           </header>
           <div>
-            {[
-              {
-                title: "Solar elavation event",
-                time: "10:33 PM",
-                magnetude: 1350,
-              },
-              {
-                title: "Solar elavation event",
-                time: "11:23 PM",
-                magnetude: 1350,
-              },
-              {
-                title: "Solar elavation event",
-                time: "11:39 PM",
-                magnetude: 1350,
-              },
-              {
-                title: "Solar elavation event",
-                time: "11:45 PM",
-                magnetude: 1350,
-              },
-              {
-                title: "Solar elavation event",
-                time: "12:01 PM",
-                magnetude: 1350,
-              },
-            ].map((e) => (
+            {weekData.map((e) => (
               <div key={e.time}>
                 <div>
                   <h2>{e.title}</h2>
                   <span>{e.time}</span>
                 </div>
-                <h1>{e.magnetude}</h1>
+                <h1>{e.magnitude} keV</h1>
               </div>
             ))}
           </div>
