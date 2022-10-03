@@ -38,27 +38,7 @@ const Home: NextPage = () => {
       title: "Solar storm event",
       time: "2022/01/01 00:00:00.538",
       magnitude: 8.3481,
-    },
-    {
-      title: "Solar storm event",
-      time: "2022/01/01 00:00:00.630",
-      magnitude: 8.373863,
-    },
-    {
-      title: "Solar storm event",
-      time: "2022/01/01 00:00:00.722",
-      magnitude: 8.408341,
-    },
-    {
-      title: "Solar storm event",
-      time: "2022/01/01 00:00:00.814",
-      magnitude: 8.427264,
-    },
-    {
-      title: "Solar storm event",
-      time: "2022/01/01 00:00:00.906",
-      magnitude: 8.434626,
-    },
+    }
   ];
 
   return (
